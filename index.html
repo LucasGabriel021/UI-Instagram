@@ -5,13 +5,104 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Instagram</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+     <script src="https://cdn.tailwindcss.com"></script>
      <script>
           tailwind.config = {
-
+               theme: {
+                    extend: {
+                         colors: {
+                              "azul-insta": "#405de6",
+                              "roxo0-insta": "#5851d8",
+                              "roxo1-insta": "#833ab4",
+                              "rosa0-insta": "#c135b4",
+                              "rosa1-insta": "#e1306c",
+                              "vermelho-insta": "#fd1d1d",
+                              "laranja0-insta": "#f56040",
+                              "laranja1-insta": "#f77737",
+                              "laranja2-insta": "#fcaf45",
+                              "laranja3-insta": "#ffdc80"
+                         },
+                         fontFamily: {
+                              roboto: ['Roboto', 'sans-serif']
+                         }
+                    }
+               }
           }
      </script>
 </head>
-<body>
-     
+<body class="bg-black">
+     <main class="w-full">
+          <header class="h-14 flex w-full justify-between items-center px-5">
+               <div class="flex items-center">
+                    <img src="assets/images/Instagram_logo.svg" alt="Instagram" class="w-24 h-10 mr-1">
+                    <img src="assets/images/icone-seta.png" alt="Seta" class="h-5 w-5">
+               </div>
+               <div class="">
+                    <img src="assets/images/icone-messenger.png" alt="Messenger" class="h-10">
+               </div>
+          </header>
+          <section id="storys" class="flex gap-x-4 px-5 mt-2">
+               <div class="">
+                    <img src="assets/images/img-luca.jpeg" alt="SirLuca021" class="h-16 w-16 rounded-full p-1 bg-gradient-to-r from-roxo1-insta via-laranja1-insta to-laranja2-insta">
+                    <h5 class="text-white font-roboto mt-1">Seu story</h5>
+               </div>
+               <div class="">
+                    <img src="assets/images/img-batman.jpg" alt="Batman" class="h-16 w-16 rounded-full p-1 bg-gradient-to-r from-roxo1-insta via-laranja1-insta to-laranja2-insta">
+                    <h5 class="text-white font-roboto mt-1">batman</h5>
+               </div>
+               <div class="">
+                    <img src="assets/images/img-reddead.png" alt="Red dead" class="h-16 w-16 rounded-full p-1 bg-gradient-to-r from-roxo1-insta via-laranja1-insta to-laranja2-insta">
+                    <h5 class="text-white font-roboto mt-1">red_dead</h5>
+               </div>
+               <div class="">
+                    <img src="assets/images/img-halo.jpg" alt="Halo" class="h-16 w-16 rounded-full p-1 bg-gradient-to-r from-roxo1-insta via-laranja1-insta to-laranja2-insta">
+                    <h5 class="text-white font-roboto mt-1">halo</h5>
+               </div>
+               <div class="">
+                    <img src="assets/images/img-enderman.png" alt="Enderman" class="h-16 w-16 rounded-full p-1 bg-gradient-to-r from-roxo1-insta via-laranja1-insta to-laranja2-insta">
+                    <h5 class="text-white font-roboto mt-1">enderman</h5>
+               </div>
+          </section>
+          <section id="tottenham" class="w-full mt-2">
+               <div class="flex justify-between items-center px-5">
+                    <div class="flex gap-x-2 items-center">
+                         <img src="assets/images/logo-spurs.jpg" alt="Tottenham" class="h-8 rounded-full">
+                         <h5 class="text-white">spursofficial</h5>
+                         <img src="assets/images/icone-verificado.png" alt="Verificado" class="h-4">
+                    </div>
+                    <div class="">
+                         <img src="assets/images/icone-3pontos.png" alt="Menu" class="h-6">
+                    </div>
+               </div>
+               <div>
+                    <img src="assets/images/postagem-spurs.png" alt="Amigos" class="h-3/5 mt-2 w-full">
+               </div>
+               <div class="flex justify-between items-center px-5 mt-2">
+                    <div class="flex items-center gap-x-2">
+                         <img src="assets/images/icone-amei.png" alt="Amei" class="h-6">
+                         <img src="assets/images/icone-comentario.png" alt="Comentar" class="h-6">
+                         <img src="assets/images/icone-enviar.png" alt="Enviar" class="h-6">
+                    </div>
+                    <div>
+                         <img src="assets/images/icone-salvar.png" alt="Salvar" class="h-6">
+                    </div>
+               </div>
+               <div class="px-5 mt-2">
+                    <h5 class="text-white font-roboto">128.725 curtidas</h5>
+               </div>
+               <div class="px-5">
+                    <h5 class="text-white font-roboto"><span class="font-bold">spursofficial </span>Sonny showing some love 🥰</h5>
+               </div>
+               <div class="px-5">
+                    <h5 class="text-slate-600 font-roboto">Ver todos os 746 comentários</h5>
+               </div>
+               <div class="px-5">
+                    <h6 class="text-slate-600 font-roboto">Há 10 horas - <span class="text-white">Ver tradução</span></h6>
+               </div>
+          </section>
+     </main>
 </body>
 </html>
